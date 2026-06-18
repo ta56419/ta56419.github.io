@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrii Tynskyi — Junior Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="nav-logo">AT</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+    <div class="container">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">Andrii Tynskyi</h1>
+        <p class="hero-title">Junior Software Engineer</p>
+        <p class="hero-subtitle">Java &middot; SQL &middot; REST API &middot; Android</p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+    </div>
+</header>
+
+<section class="section" id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>
+                I'm a Computer Science student at the West Pomeranian University of Technology in Szczecin,
+                looking for my first junior role or internship as a Software Engineer.
+            </p>
+            <p>
+                I have hands-on project experience with Java, Android, Firebase, SQL/MySQL, REST API basics,
+                and technical documentation. I've built mobile apps, designed relational databases,
+                tested business scenarios, and presented working solutions.
+            </p>
+            <p>
+                Currently expanding my toolkit with <strong>Spring Boot</strong>, <strong>JUnit</strong>, and <strong>Kotlin</strong>.
+            </p>
+            <div class="about-details">
+                <div class="detail-item">
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">Szczecin, Poland</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">University</span>
+                    <span class="detail-value">ZUT Szczecin — Computer Science</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Languages</span>
+                    <span class="detail-value">Ukrainian (native), English (B2), Polish (B1/B2)</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Availability</span>
+                    <span class="detail-value">On-site / Hybrid / Remote</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt" id="skills">
+    <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">&#9881;</div>
+                <h3>Backend</h3>
+                <p>Java, Spring Boot, REST API, HTTP/JSON, Maven</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#128202;</div>
+                <h3>Databases</h3>
+                <p>MySQL, MariaDB, H2, SQL, JPA/Hibernate, normalization</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#128241;</div>
+                <h3>Mobile</h3>
+                <p>Android, Java, XML, Firebase, Android Studio</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#128295;</div>
+                <h3>Tools & Testing</h3>
+                <p>Git, Postman, JUnit, Mockito, VS Code, IntelliJ</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#127760;</div>
+                <h3>Web Basics</h3>
+                <p>HTML, CSS, REST principles, JSON, API design</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">&#128640;</div>
+                <h3>Currently Learning</h3>
+                <p>Spring Boot, JUnit, Kotlin, Docker basics</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="projects">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+            <article class="project-card featured">
+                <div class="project-badge">Featured</div>
+                <h3 class="project-name">Multikino REST API</h3>
+                <p class="project-tech">Spring Boot, Java, JPA, H2/MySQL, JUnit, Postman</p>
+                <p class="project-desc">
+                    A full REST API for a cinema ticket reservation system. Supports movies, screenings,
+                    users, and reservations with real-time seat availability validation.
+                    Includes 7 JUnit tests and full Postman-documented endpoints.
+                </p>
+                <ul class="project-highlights">
+                    <li>20+ REST endpoints (GET, POST, PUT, DELETE, PATCH)</li>
+                    <li>Smart seat validation and automatic restoration on cancel</li>
+                    <li>Clean layered architecture: Controller &rarr; Service &rarr; Repository</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/ta56419/multikino-rest-api" target="_blank" class="btn btn-small">GitHub Repo</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3 class="project-name">AB-Fit</h3>
+                <p class="project-tech">Android, Java, Firebase, XML</p>
+                <p class="project-desc">
+                    Mobile app for gym management — handles subscriptions, payments, and training statistics.
+                    Integrated with Firebase cloud database. Full technical documentation.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h3 class="project-name">SIYS — Start Improving Yourself</h3>
+                <p class="project-tech">Android, Java, XML</p>
+                <p class="project-desc">
+                    A self-improvement mobile app with goal planning, reminders, discipline tracking,
+                    and relaxation techniques. Presented to an audience focusing on UX and user engagement.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h3 class="project-name">Smart Home Lighting</h3>
+                <p class="project-tech">Arduino, Mobile App, Sensors</p>
+                <p class="project-desc">
+                    IoT prototype with motion, temperature, and light sensors. Built remote control
+                    via a mobile app and delivered a working hardware demonstration.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h3 class="project-name">Lazior Rover</h3>
+                <p class="project-tech">Autodesk Fusion 360, STM32 Nucleo, 3D Printing</p>
+                <p class="project-desc">
+                    Team project building a rover. Prepared 3D models and DXF files, optimized parts
+                    for 3D printing, assisted with wiring and motor testing on STM32.
+                </p>
+            </article>
+
+            <article class="project-card">
+                <h3 class="project-name">Zombie Apocalypse</h3>
+                <p class="project-tech">Unity, C#, Blender, HTML/CSS</p>
+                <p class="project-desc">
+                    Team survival game project. Served as PR Manager and programmer —
+                    contributed to game logic, project communication, and the final presentation.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt" id="experience">
+    <div class="container">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">2023 — Present</div>
+                <h3>West Pomeranian University of Technology, Szczecin</h3>
+                <p>B.Eng. Computer Science — Information Systems Engineering</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Internship</div>
+                <h3>SOFTSERVICE TECHNOLOGIES LTD</h3>
+                <p>Developer support intern — teamwork, technical documentation, task delivery in a dev environment.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">2023</div>
+                <h3>Secondary School No. 91, Lviv</h3>
+                <p>Graduated with honors — Gold Medal</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-date">Courses</div>
+                <h3>Additional Training</h3>
+                <p>Start IT Academy &middot; Samsung IT School &middot; LeetCode &middot; W3Schools</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="contact-intro">
+            I'm actively looking for junior developer roles or internships.
+            Feel free to reach out!
+        </p>
+        <div class="contact-links">
+            <a href="mailto:andriy.tynskiy.school91@gmail.com" class="contact-item">
+                <span class="contact-icon">&#9993;</span>
+                <span>andriy.tynskiy.school91@gmail.com</span>
+            </a>
+            <a href="tel:+48720845936" class="contact-item">
+                <span class="contact-icon">&#9742;</span>
+                <span>+48 720 845 936</span>
+            </a>
+            <a href="https://github.com/ta56419" target="_blank" class="contact-item">
+                <span class="contact-icon">&#128187;</span>
+                <span>github.com/ta56419</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Andrii Tynskyi. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
