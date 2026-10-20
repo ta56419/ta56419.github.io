@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrii Tynskyi — Junior Software Engineer</title>
+    <meta name="description" content="Andrii Tynskyi — Junior AI and Software Engineer in Szczecin. Applied ML, GenAI, RAG, Python, Java, REST APIs, and backend projects.">
+    <title>Andrii Tynskyi — Junior AI &amp; Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -28,8 +29,8 @@
 <header class="hero" id="home">
     <div class="container">
         <h1 class="hero-name">Andrii Tynskyi</h1>
-        <p class="hero-title">Junior Software Engineer</p>
-        <p class="hero-subtitle">Java / SQL / REST API / Android</p>
+        <p class="hero-title">Junior AI &amp; Software Engineer</p>
+        <p class="hero-subtitle">Applied ML &amp; GenAI / Python / RAG / scikit-learn / REST API</p>
         <div class="hero-actions">
             <a href="#projects" class="btn btn-primary">Projects</a>
             <a href="#contact" class="btn btn-outline">Contact</a>
@@ -42,17 +43,19 @@
         <h2 class="section-title">About</h2>
         <div class="about-content">
             <p>
-                I'm studying Computer Science at ZUT in Szczecin (West Pomeranian University of Technology).
-                Looking for a junior dev role or internship where I can actually write code and learn from
-                people who know more than me.
+                I'm a Computer Science student at ZUT in Szczecin, building a foundation for junior AI Engineer,
+                Machine Learning Engineer, or software engineering roles. My recent work explores applied ML and
+                GenAI through reproducible Python projects: document-grounded RAG, LLM response evaluation, and a
+                scikit-learn model served through an API.
             </p>
             <p>
-                Most of my experience comes from university projects — I've built Android apps with Firebase,
-                designed MySQL databases, worked with REST APIs, and wrote documentation that people
-                could actually read. I also did a dev support internship at SOFTSERVICE TECHNOLOGIES.
+                I bring broader software engineering experience from university projects and an internship at
+                SOFTSERVICE TECHNOLOGIES: Java and Spring Boot APIs, a PHP MVC application, SQL data modelling,
+                Android apps with Firebase, IoT prototypes, unit testing, Docker, and technical documentation.
+                These foundations help me build AI features as maintainable software, not isolated demos.
             </p>
             <p>
-                Right now I'm picking up <strong>Spring Boot</strong> and <strong>JUnit</strong> on my own.
+                My current focus is Python, applied machine learning, LLM evaluation, and reliable AI application design.
             </p>
             <div class="about-details">
                 <div class="detail-item">
@@ -69,7 +72,7 @@
                 </div>
                 <div class="detail-item">
                     <span class="detail-label">Open to</span>
-                    <span class="detail-value">On-site, hybrid, or remote</span>
+                    <span class="detail-value">Szczecin-based; open to local, hybrid, and remote roles</span>
                 </div>
             </div>
         </div>
@@ -81,8 +84,22 @@
         <h2 class="section-title">What I work with</h2>
         <div class="skills-list">
             <div class="skill-group">
+                <h3>AI &amp; Machine Learning</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>RAG</span>
+                    <span>LLM tool calling</span>
+                    <span>Prompt grounding</span>
+                    <span>LLM evaluation</span>
+                    <span>scikit-learn</span>
+                    <span>pandas</span>
+                    <span>NumPy</span>
+                </div>
+            </div>
+            <div class="skill-group">
                 <h3>Backend</h3>
                 <div class="skill-tags">
+                    <span>FastAPI</span>
                     <span>Java</span>
                     <span>Spring Boot</span>
                     <span>REST API</span>
@@ -117,6 +134,9 @@
                     <span>Postman</span>
                     <span>JUnit</span>
                     <span>Mockito</span>
+                    <span>unittest</span>
+                    <span>GitHub Actions</span>
+                    <span>Docker</span>
                     <span>VS Code</span>
                     <span>IntelliJ</span>
                 </div>
@@ -133,11 +153,12 @@
                 </div>
             </div>
             <div class="skill-group">
-                <h3>Learning now</h3>
+                <h3>Mobile &amp; embedded</h3>
                 <div class="skill-tags">
-                    <span>Spring Boot</span>
-                    <span>JUnit</span>
-                    <span>Kotlin</span>
+                    <span>Android</span>
+                    <span>Firebase</span>
+                    <span>Arduino</span>
+                    <span>STM32</span>
                 </div>
             </div>
         </div>
@@ -150,6 +171,47 @@
         <div class="projects-list">
 
             <article class="project-card main-project">
+                <div class="project-header">
+                    <h3 class="project-name">DocuAgent — grounded document assistant</h3>
+                    <a href="https://github.com/ta56419/ai-docs-agent" target="_blank" rel="noopener noreferrer" class="project-link">view on github &rarr;</a>
+                </div>
+                <p class="project-tech">Python, SQLite FTS5/BM25, RAG, LLM tool calling, GitHub Actions</p>
+                <p class="project-desc">
+                    A document assistant that retrieves Markdown evidence, passes relevant passages to an
+                    OpenAI-compatible model, and returns cited answers. Includes bounded tool use, a restricted
+                    calculator, offline tests, and a small retrieval benchmark.
+                </p>
+                <p class="project-desc">Measured on the included synthetic corpus: 19/19 expected sections retrieved in the top 3; this is a small retrieval benchmark, not a factuality guarantee.</p>
+            </article>
+
+            <article class="project-card main-project">
+                <div class="project-header">
+                    <h3 class="project-name">LLM Eval &amp; Security Lab</h3>
+                    <a href="https://github.com/ta56419/llm-eval-security-lab" target="_blank" rel="noopener noreferrer" class="project-link">view on github &rarr;</a>
+                </div>
+                <p class="project-tech">Python, RAG evaluation, citation checks, prompt injection, CI</p>
+                <p class="project-desc">
+                    An offline evaluation harness for saved LLM answers. Checks citations against supplied sources,
+                    expected refusals, and basic prompt-injection resistance, then exports a JSON report for CI.
+                    Its lexical grounding check is explicitly a heuristic, not a semantic fact checker.
+                </p>
+            </article>
+
+            <article class="project-card main-project">
+                <div class="project-header">
+                    <h3 class="project-name">Customer Churn ML Platform</h3>
+                    <a href="https://github.com/ta56419/customer-churn-ml-platform" target="_blank" rel="noopener noreferrer" class="project-link">view on github &rarr;</a>
+                </div>
+                <p class="project-tech">Python, pandas, scikit-learn, FastAPI, reproducible evaluation</p>
+                <p class="project-desc">
+                    A complete tabular ML workflow: schema validation, preprocessing pipeline, stratified holdout
+                    evaluation, model persistence, and a FastAPI prediction endpoint. On its 200-row synthetic
+                    holdout, the sample model reached ROC-AUC 0.744 and recall 0.819; these are demonstration
+                    results on generated data, not real customer outcomes.
+                </p>
+            </article>
+
+            <article class="project-card">
                 <div class="project-header">
                     <h3 class="project-name">PlusFlix</h3>
                     <a href="https://github.com/ta56419/plusflix" target="_blank" class="project-link">view on github &rarr;</a>
@@ -167,7 +229,7 @@
                 </p>
             </article>
 
-            <article class="project-card main-project">
+            <article class="project-card">
                 <div class="project-header">
                     <h3 class="project-name">Multikino REST API</h3>
                     <a href="https://github.com/ta56419/multikino-rest-api" target="_blank" class="project-link">view on github &rarr;</a>
@@ -301,7 +363,7 @@
 
 <footer class="footer">
     <div class="container">
-        <p>&copy; 2025 Andrii Tynskyi</p>
+        <p>&copy; 2026 Andrii Tynskyi</p>
     </div>
 </footer>
 
